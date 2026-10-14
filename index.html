@@ -1,14 +1,65 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My First Site</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Home | Nikki Rose Pacino</title>
+  <meta name="description"
+        content="Welcome to my personal website where I share my background, interests, and web development projects.">
+  <link rel="canonical"
+        href="https://YOUR-DOMAIN.com/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Home | Nikki Rose Pacino">
+  <meta property="og:description"
+        content="Explore my background, interests, and web development projects.">
+  <meta property="og:image"
+        content="https://YOUR-DOMAIN.com/assets/hero-md.webp">
+  <meta property="og:url"
+        content="https://YOUR-DOMAIN.com/index.html">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <p>My name is <strong>Nikki Rose Pacino</strong>. This is my first page.</p>
+  <header>
+    <h1>Nikki Rose Pacino</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Welcome</h2>
+      <p>Hello! Welcome to my personal website.
+        I am a BS Information Systems student who is
+        learning web development and digital technologies.</p>
+    </article>
+
+    <picture>
+      <source type="image/webp"
+              srcset="assets/hero-sm.webp 400w,
+                      assets/hero-md.webp 800w,
+                      assets/hero-lg.webp 1600w"
+              sizes="(max-width: 600px) 90vw, 800px">
+      <img src="assets/hero-original.jpeg"
+           alt="Three rabbits sitting in grass among colorful flowers"
+           width="800" height="450"
+           loading="lazy">
+    </picture>
+
+    <section aria-labelledby="interests">
+      <h2 id="interests">My Interests</h2>
+      <p>I enjoy learning new skills, exploring technology,
+        and creating useful digital projects.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Nikki Rose Pacino</p>
+  </footer>
 </body>
 </html>
-
