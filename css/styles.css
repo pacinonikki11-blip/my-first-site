@@ -132,7 +132,9 @@ a {
     background: #080F1B;
   }
 }
-
+.card {
+  box-sizing: content-box;
+}
 .card {
   width: 200px;
   padding: 24px;
